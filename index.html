@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Work+Sans:wght@400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/8717cab48c.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/main.css" />
+
+		<title>Web Portfolio</title>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav class="container relative z-50 mx-auto p-6">
+			<div class="flex items-center justify-between">
+				<!-- Logo -->
+				<span class="font-fontHeading text-xl font-bold md:text-3xl"
+					>Baconguis<span class="text-redhue">clyde</span>
+				</span>
+				<!-- Menu Items -->
+				<div class="hidden space-x-4 font-semibold md:flex">
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Home</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>About Me</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Education</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Projects</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Contact</a
+					>
+				</div>
+
+				<!-- Hamburger Icon -->
+				<button
+					id="menu-btn"
+					class="hamburger block focus:outline-none md:hidden"
+				>
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div class="md:hidden">
+				<div
+					id="menu"
+					class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-semibold drop-shadow-md sm:w-auto"
+				>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Home</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>About Me</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Education</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Projects</a
+					>
+					<a
+						href="#"
+						class="transition duration-700 ease-in-out hover:opacity-40"
+						>Contact</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero -->
+
+		<div
+			class="container relative mx-auto mt-16 flex-row-reverse items-center justify-center p-6 text-center md:flex"
+		>
+			<img
+				src="img/hero.jpeg"
+				alt="profile"
+				class="-z-20 mx-auto h-60 w-auto flex-1 rounded-md shadow-2xl md:ml-4 md:h-52 lg:h-60"
+			/>
+
+			<div class="my-5 flex-1 md:pr-5 md:text-start">
+				<p>
+					Hi there! My name is Clyde Baconguis, an IT graduate who has
+					a passion for coding and web development. Fullstack web and
+					mobile developer.
+				</p>
+
+				<a
+					href="#"
+					class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm uppercase text-white shadow-xl shadow-gray-300 transition duration-700 hover:bg-white hover:text-redhue"
+				>
+					Portfolio
+				</a>
+			</div>
+
+			<img
+				src="img/computer.png"
+				alt="computer"
+				class="absolute right-2 bottom-0 z-30 hidden h-60 w-72 translate-y-16 md:block"
+			/>
+			<img
+				src="img/gear.png"
+				alt="computer"
+				class="absolute right-0 top-0 z-30 hidden h-32 w-32 -translate-y-10 md:block"
+			/>
+		</div>
+
+		<!-- Wave -->
+		<div style="height: 150px; overflow: hidden">
+			<svg
+				viewBox="0 0 500 150"
+				preserveAspectRatio="none"
+				style="height: 100%; width: 100%"
+			>
+				<path
+					d="M-26.90,21.22 C149.17,256.09 323.55,-62.65 507.52,28.13 L500.00,150.00 L0.00,150.00 Z"
+					style="stroke: none; fill: hsl(210, 100%, 60%)"
+				></path>
+			</svg>
+		</div>
+		<!-- End of Wave -->
+
+		<!-- About Me -->
+		<div
+			class="m-0 bg-gradient-to-t from-cyan-500 to-bluehue pt-5 pb-12 text-center text-white"
+		>
+			<h1 class="font-fontHeading text-5xl font-bold text-white">
+				About Me
+			</h1>
+			<div class="mx-auto mb-12 mt-2 h-1 w-20 bg-redhuelight"></div>
+
+			<div
+				class="container mx-auto items-center justify-between p-6 md:flex md:space-x-5"
+			>
+				<img
+					src="img/profile.jpg"
+					alt="profile"
+					class="mx-auto h-72 w-auto max-w-sm flex-1 items-center rounded-md shadow-2xl md:h-80 lg:h-96"
+				/>
+
+				<div class="my-4 flex-1 md:p-5 lg:text-start">
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. At sapiente in fugiat sequi tempora voluptatibus
+						incidunt iusto impedit minus ipsa?
+					</p>
+					<br />
+
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Itaque voluptate quasi magni non debitis ea, ipsa
+						molestias minus iusto vero!
+					</p>
+					<a
+						href="#"
+						class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm uppercase text-white shadow-xl transition duration-700 hover:bg-white hover:text-redhue"
+					>
+						Portfolio
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- About End -->
+
+		<!-- Education -->
+		<div class="p-6 pt-20">
+			<h1 class="text-center font-fontHeading text-5xl font-bold">
+				Education
+			</h1>
+			<div class="mx-auto mb-20 mt-2 h-1 w-20 bg-bluehue md:mb-0"></div>
+
+			<div class="md:flex md:translate-y-28 md:space-x-4">
+				<!-- Tertiary -->
+				<div
+					class="z-20 mx-auto mb-7 max-w-screen-sm flex-1 rounded-lg border-4 border-gray-700 bg-gradient-to-tr from-orange-300 to-orange-100 px-4 py-6 shadow transition delay-150 duration-700 ease-in-out hover:-translate-y-5 hover:border-gray-300 hover:shadow-2xl"
+				>
+					<div class="flex items-start justify-center">
+						<i
+							class="fa-solid fa-user-graduate text-xl text-orange-800"
+						>
+						</i>
+						<h2
+							class="ml-1 text-center text-sm uppercase text-orange-800 opacity-60"
+						>
+							Tertiary: 2019-2023
+						</h2>
+					</div>
+
+					<div class="my-3 flex items-center">
+						<img
+							src="./img/tertiary.jpg"
+							alt="skol"
+							class="w-20 rounded-full"
+						/>
+						<p class="ml-2 text-lg font-semibold">
+							PHINMA Cagayan De Oro College
+						</p>
+					</div>
+
+					<div class="ml-3 flex items-start">
+						<i
+							class="fa-solid fa-circle-check text-lg text-orange-100"
+						></i>
+						<p class="ml-1 opacity-80">
+							Bachelor of Science in Information Technology
+						</p>
+					</div>
+				</div>
+
+				<!-- Secondary -->
+				<div
+					class="z-20 mx-auto mb-7 max-w-screen-sm flex-1 rounded-lg border-4 border-gray-700 bg-gradient-to-tr from-orange-300 to-orange-100 px-4 py-6 shadow transition delay-150 duration-700 ease-in-out hover:-translate-y-5 hover:border-gray-300 hover:shadow-2xl"
+				>
+					<div class="flex items-start justify-center">
+						<i
+							class="fa-solid fa-user-graduate text-xl text-orange-800"
+						>
+						</i>
+						<h2
+							class="ml-1 text-center text-sm uppercase text-orange-800 opacity-60"
+						>
+							Secondary: 2014-2018
+						</h2>
+					</div>
+
+					<div class="my-3 flex items-center">
+						<img
+							src="./img/secondary.png"
+							alt="skol"
+							class="w-20 rounded-full"
+						/>
+						<p class="ml-2 text-lg font-semibold">
+							The Sisters of Mary School - Boystown
+						</p>
+					</div>
+
+					<div class="ml-2 flex items-start">
+						<i
+							class="fa-solid fa-circle-check text-lg text-orange-100"
+						></i>
+						<p class="ml-1 opacity-80">Machining NC II</p>
+					</div>
+				</div>
+
+				<!-- Elementary -->
+				<div
+					class="z-20 mx-auto mb-7 max-w-screen-sm flex-1 rounded-lg border-4 border-gray-700 bg-gradient-to-tr from-orange-300 to-orange-100 px-4 py-6 shadow transition delay-150 duration-700 ease-in-out hover:-translate-y-5 hover:border-gray-300 hover:shadow-2xl"
+				>
+					<div class="flex items-start justify-center">
+						<i
+							class="fa-solid fa-user-graduate text-xl text-orange-800"
+						>
+						</i>
+						<h2
+							class="ml-1 text-center text-sm uppercase text-orange-800 opacity-60"
+						>
+							Elementary: 2013-2014
+						</h2>
+					</div>
+
+					<div class="my-3 flex items-center">
+						<img
+							src="./img/elementary.jpg"
+							alt="skol"
+							class="w-20 rounded-full"
+						/>
+						<p class="ml-2 text-lg font-semibold">
+							Gusa Elementary School
+						</p>
+					</div>
+
+					<div class="ml-2 flex items-start">
+						<i
+							class="fa-solid fa-circle-check text-lg text-orange-100"
+						></i>
+						<p class="ml-1 opacity-80">Best in Arts</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Education -->
+
+		<!-- Skills -->
+		<div class="bg-gray-700 p-6 pb-20">
+			<h1
+				class="mt-20 text-center font-fontHeading text-5xl font-bold text-white after:mx-auto after:mb-20 after:mt-2 after:block after:h-1 after:w-20 after:bg-bluehue md:mt-40"
+			>
+				Skills
+			</h1>
+
+			<ul class="flex flex-wrap items-center justify-center">
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i class="fa-brands fa-html5 text-7xl text-redhue"></i>
+						<h3 class="font-semibold text-gray-200">HTML</h3>
+					</div>
+				</li>
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i class="fa-brands fa-css3 text-7xl text-bluehue"></i>
+						<h3 class="font-semibold text-gray-200">CSS</h3>
+					</div>
+				</li>
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i class="fa-brands fa-js text-7xl text-yellow-300"></i>
+						<h3 class="font-semibold text-gray-200">Javascript</h3>
+					</div>
+				</li>
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i
+							class="fa-brands fa-laravel text-7xl text-redhue"
+						></i>
+						<h3 class="font-semibold text-gray-200">Laravel</h3>
+					</div>
+				</li>
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i class="fa-brands fa-php text-7xl text-bluehue"></i>
+						<h3 class="font-semibold text-gray-200">PHP</h3>
+					</div>
+				</li>
+				<li
+					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				>
+					<div>
+						<i
+							class="fa-brands fa-react text-7xl text-yellow-300"
+						></i>
+						<h3 class="font-semibold text-gray-200">React</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- End of Skills -->
+
+		<!-- Portfolio -->
+		<section class="py-20">
+			<h1 class="text-center font-fontHeading text-5xl font-bold">
+				Portfolio
+			</h1>
+			<div class="mx-auto mb-20 mt-2 h-1 w-20 bg-bluehue"></div>
+			<div class="container mx-auto items-center md:flex">
+				<div
+					onmouseover="document.getElementById('mymarquee').stop();"
+					onmouseout="document.getElementById('mymarquee').start();"
+					class="portfolio relative m-4 flex-1 rounded-md border-4 border-gray-500 shadow-lg shadow-blue-100"
+				>
+					<div
+						id="overlay"
+						class="absolute right-0 top-0 z-10 h-full w-full bg-gradient-to-tr from-black to-green-600 opacity-0 transition-all delay-100 duration-1000 ease-in hover:opacity-50"
+					></div>
+					<div
+						id="content"
+						class="absolute top-1/4 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-xl text-white opacity-0 transition-all delay-200 duration-1000"
+					>
+						<p class="text-center text-lg font-semibold">
+							Check my project
+						</p>
+						<div
+							class="mt-4 flex items-center justify-center space-x-6"
+						>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fas fa-link"></i
+							></a>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fab fa-github"></i
+							></a>
+						</div>
+					</div>
+					<marquee
+						id="mymarquee"
+						behavior="scroll"
+						direction="up"
+						class="h-60"
+					>
+						<img src="img/project-one.jpeg" alt="" class="w-full" />
+					</marquee>
+					<div class="bg-gray-100 p-4">
+						<h3 class="mb-1 font-bold">HTML + TAILWINDCSS</h3>
+						<p>
+							Simple Mobile first web portfolio using tailwind and
+							html.
+						</p>
+					</div>
+				</div>
+				<div
+					onmouseover="document.getElementById('mymarquee2').stop();"
+					onmouseout="document.getElementById('mymarquee2').start();"
+					class="portfolio relative m-4 flex-1 rounded-md border-4 border-gray-500 shadow-lg shadow-blue-100"
+				>
+					<div
+						id="overlay"
+						class="absolute right-0 top-0 z-10 h-full w-full bg-gradient-to-tr from-black to-green-600 opacity-0 transition-all delay-100 duration-1000 ease-in hover:opacity-50"
+					></div>
+					<div
+						id="content"
+						class="absolute top-1/4 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-xl text-white opacity-0 transition-all delay-200 duration-1000"
+					>
+						<p class="text-center text-lg font-semibold">
+							Check my project
+						</p>
+						<div
+							class="mt-4 flex items-center justify-center space-x-6"
+						>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fas fa-link"></i
+							></a>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fab fa-github"></i
+							></a>
+						</div>
+					</div>
+					<marquee
+						id="mymarquee2"
+						behavior="scroll"
+						direction="up"
+						class="h-60"
+					>
+						<img src="img/project-one.jpeg" alt="" class="w-full" />
+					</marquee>
+					<div class="bg-gray-100 p-4">
+						<h3 class="mb-1 font-bold">HTML + TAILWINDCSS</h3>
+						<p>
+							Simple Mobile first web portfolio using tailwind and
+							html.
+						</p>
+					</div>
+				</div>
+				<div
+					onmouseover="document.getElementById('mymarquee3').stop();"
+					onmouseout="document.getElementById('mymarquee3').start();"
+					class="portfolio relative m-4 flex-1 rounded-md border-4 border-gray-500 shadow-lg shadow-blue-100"
+				>
+					<div
+						id="overlay"
+						class="absolute right-0 top-0 z-10 h-full w-full bg-gradient-to-tr from-black to-green-600 opacity-0 transition-all delay-100 duration-1000 ease-in hover:opacity-50"
+					></div>
+					<div
+						id="content"
+						class="absolute top-1/4 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-xl text-white opacity-0 transition-all delay-200 duration-1000"
+					>
+						<p class="text-center text-lg font-semibold">
+							Check my project
+						</p>
+						<div
+							class="mt-4 flex items-center justify-center space-x-6"
+						>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fas fa-link"></i
+							></a>
+							<a
+								href="#"
+								class="text-4xl text-yellow-500 hover:text-yellow-400"
+								><i class="fab fa-github"></i
+							></a>
+						</div>
+					</div>
+					<marquee
+						id="mymarquee3"
+						behavior="scroll"
+						direction="up"
+						class="h-60"
+					>
+						<img src="img/project-one.jpeg" alt="" class="w-full" />
+					</marquee>
+					<div class="bg-gray-100 p-4">
+						<h3 class="mb-1 font-bold">HTML + TAILWINDCSS</h3>
+						<p>
+							Simple Mobile first web portfolio using tailwind and
+							html.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Portfolio -->
+
+		<!-- Contact Form -->
+		<div class="bg-gray-200 pb-20">
+			<div class="container mx-auto p-6">
+				<h1
+					class="mt-20 text-center font-fontHeading text-5xl font-bold"
+				>
+					Contact Me
+				</h1>
+				<div class="mx-auto mb-20 mt-2 h-1 w-20 bg-bluehue"></div>
+
+				<div class="md:flex md:space-x-6">
+					<div class="flex-1">
+						<!-- Info -->
+						<div class="mb-4 rounded-xl bg-orange-50 p-6">
+							<p class="mb-4">
+								<i
+									class="fa-solid fa-envelope mr-1 text-orange-900"
+								></i>
+								clydebaconguis3737@gmail.com
+							</p>
+							<p class="mb-4">
+								<i
+									class="fa-solid fa-phone mr-1 text-orange-900"
+								></i>
+								(+63) 955-458-7790
+							</p>
+							<p>
+								<i
+									class="fa-solid fa-location-dot mr-1 text-orange-900"
+								></i>
+								Gusa, Cagayan de Oro City, Misamis Oriental
+							</p>
+						</div>
+
+						<!-- Map frame -->
+
+						<p class="mt-5 rounded-xl border-2 border-gray-700">
+							<iframe
+								class="h-60 rounded-xl"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31571.061957639206!2d124.66100656637917!3d8.462109659257145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2af3ed45adf%3A0x5768c7817c99b735!2sGusa%2C%20Cagayan%20de%20Oro%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1656248797439!5m2!1sen!2sph"
+								width="100%"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</p>
+					</div>
+
+					<!-- form -->
+					<form
+						action="https://formsubmit.co/d6248f0a13e4b0ce10b4d93309f9459c"
+						method="POST"
+						class="flex-1 rounded-t-xl p-6 md:mt-0"
+					>
+						<div class="my-6">
+							<input
+								type="text"
+								name="name"
+								required
+								placeholder="Enter full name"
+								class="mt-1 w-full rounded-full bg-gray-700 py-2 px-4 text-white outline-none"
+							/>
+						</div>
+						<div>
+							<input
+								type="email"
+								name="email"
+								required
+								placeholder="Enter valid email"
+								class="mt-1 w-full rounded-full bg-gray-700 py-2 px-4 text-white outline-none"
+							/>
+						</div>
+						<div class="my-6">
+							<textarea
+								name="message"
+								cols="30"
+								rows="5"
+								class="mt-1 w-full rounded-md bg-gray-700 py-2 px-4 text-white outline-none"
+								required
+								placeholder="Type your message"
+							></textarea>
+						</div>
+						<input
+							type="submit"
+							name="submit"
+							class="rounded-full border border-gray-700 bg-white px-4 py-1.5 text-sm uppercase text-black shadow-xl transition delay-200 duration-500 ease-in-out hover:bg-black hover:text-white"
+							value="Send"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End Contact Form -->
+
+		<!-- Footer -->
+		<footer class="bg-gray-800">
+			<div
+				class="container mx-auto flex flex-row-reverse items-center justify-between p-6 font-serif text-base text-gray-500 md:text-lg"
+			>
+				<div class="flex space-x-4">
+					<a href="#">
+						<i class="fa-brands fa-tiktok hover:text-gray-400"></i
+					></a>
+					<a href="#"
+						><i
+							class="fa-brands fa-facebook-f hover:text-gray-400"
+						></i
+					></a>
+					<a href="#"
+						><i
+							class="fa-brands fa-instagram hover:text-gray-400"
+						></i
+					></a>
+					<a href="#"
+						><i
+							class="fa-brands fa-google-plus-g hover:text-gray-400"
+						></i
+					></a>
+				</div>
+				<p class="hover:text-gray-400">&copy; Baconguisclyde.com</p>
+			</div>
+		</footer>
+
+		<!-- End Footer -->
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
