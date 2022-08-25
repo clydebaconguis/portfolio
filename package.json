@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "port = process.env.PORT || 80",
+		"start": "index.php",
 		"build": "tailwindcss -i ./input.css -o ./css/main.css",
 		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
 	},
