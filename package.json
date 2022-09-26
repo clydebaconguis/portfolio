@@ -4,12 +4,14 @@
 	"description": "",
 	"main": "index.php",
 	"scripts": {
-		"start": "",
+		"start": "node index.php",
 		"build": "tailwindcss -i ./input.css -o ./css/main.css",
 		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"portfolio"
+	],
+	"author": "clyde",
 	"license": "ISC",
 	"devDependencies": {
 		"prettier": "^2.7.1",
