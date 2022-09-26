@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "tailwindcss -i ./input.css -o ./css/main.css",
 		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-		"start": "serve -s build",
+		"start": "node index.js",
 		"heroku-postbuild": "npm run build"
 	},
 	"keywords": [
