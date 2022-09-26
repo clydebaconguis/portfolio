@@ -1,1 +1,1 @@
-web: bash index.php
+web: node index.php
