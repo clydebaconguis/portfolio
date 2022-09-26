@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.php",
 	"scripts": {
-		"start": "index.php",
+		"start": "",
 		"build": "tailwindcss -i ./input.css -o ./css/main.css",
 		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
 	},
@@ -15,5 +15,8 @@
 		"prettier": "^2.7.1",
 		"prettier-plugin-tailwindcss": "^0.1.11",
 		"tailwindcss": "^3.1.4"
+	},
+	"engines": {
+		"node": "16.14.0"
 	}
 }
