@@ -16,12 +16,12 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".scroll-to-about").click(function () {
-		$("body, html").animate(
-			{ scrollTop: $(".about-section").offset().top },
-			1000
-		);
-	});
+	// $(".scroll-to-about").click(function () {
+	// 	$("body, html").animate(
+	// 		{ scrollTop: $(".about-section").offset().top },
+	// 		1000
+	// 	);
+	// });
 
 	// Select all links with hashes
 	$('a[href*="#"]')
