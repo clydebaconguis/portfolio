@@ -1,13 +1,13 @@
-const btn = document.getElementById("menu-btn");
-const nav = document.getElementById("menu");
-
-btn.addEventListener("click", () => {
-	btn.classList.toggle("open");
-	nav.classList.toggle("flex");
-	nav.classList.toggle("hidden");
-});
-
 $(document).ready(function () {
+	const btn = document.getElementById("menu-btn");
+	const nav = document.getElementById("menu");
+
+	btn.addEventListener("click", () => {
+		btn.classList.toggle("open");
+		nav.classList.toggle("flex");
+		nav.classList.toggle("hidden");
+	});
+
 	$(".about-section").waypoint(function (direction) {
 		if (direction == "down") {
 			$("header").addClass("sticky top-0 z-50");
