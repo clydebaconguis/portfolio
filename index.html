@@ -10,11 +10,15 @@
 			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Work+Sans:wght@400;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="css/main.css" />
 		<script
 			src="https://kit.fontawesome.com/8717cab48c.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="css/main.css" />
 
 		<title>Web Portfolio</title>
 	</head>
@@ -25,14 +29,15 @@
 			<nav class="container relative mx-auto p-6">
 				<div class="flex items-center justify-between">
 					<!-- Logo -->
-					<span class="font-fontHeading text-xl font-bold md:text-3xl"
+					<!-- <span class="font-fontHeading text-xl font-bold md:text-3xl"
 						>Baconguis<span class="text-redhue">clyde</span>
-					</span>
+					</span> -->
+					<img src="/img/logo.png" alt="logo">
 					<!-- Menu Items -->
-					<div class="hidden space-x-4 font-semibold md:flex">
+					<div class="hidden space-x-4 font-bold md:flex">
 						<a
 							href="#"
-							class="transition duration-700 ease-in-out hover:opacity-40"
+							class="transition duration-700 ease-in-out hover:text-redhue"
 							>Home</a
 						>
 						<a
@@ -115,11 +120,10 @@
 				class="-z-20 mx-auto h-60 w-auto flex-1 rounded-md shadow-2xl md:ml-4 md:h-52 lg:h-60"
 			/>
 
-			<div class="my-5 flex-1 md:pr-5 md:text-start">
+			<div class="my-5 flex-1 font-bold md:pr-5 md:text-start md:text-xl">
 				<p>
-					Hi there! My name is Clyde Baconguis, an IT graduate who has
-					a passion for coding. I do Android development and static
-					Websites.
+					Hi there! My name is Clyde Baconguis an Android and Web
+					Developer.
 				</p>
 
 				<a
@@ -170,31 +174,31 @@
 			<div
 				class="container mx-auto items-center justify-between p-6 md:flex md:space-x-5"
 			>
-				<img
-					src="img/profile.jpg"
-					alt="profile"
-					class="mx-auto h-72 w-auto max-w-sm flex-1 items-center rounded-md shadow-2xl md:h-80 lg:h-96"
-				/>
+				<div>
+					<img
+						src="img/formal-attire.jpg"
+						alt="profile"
+						class="lg:m mx-auto h-72 w-auto flex-1 items-center rounded-md shadow-2xl md:h-96 md:w-72 lg:max-h-96"
+					/>
+				</div>
 
 				<div class="my-4 flex-1 md:p-5 lg:text-start">
 					<p>
-						Familiar with kotlin and Android Studio for android
+						Knowledgable of kotlin and android studio for mobile
 						development. Familiar of some frameworks like Laravel,
-						Vue, and React. Basic knowledge of APIs, SQL, XAMPP, GIT
-						and Postman.
+						Vue, and React.
+					</p>
+					<br />
+					<p>
+						SRE Intern at Fligno Software Philippines. Linux and AWS
+						cloud practioner.
 					</p>
 					<br />
 
-					<p>
-						Basic understanding of making APIs for android
-						consumption using Php Laravel. A good grasp of using
-						SQL, XAMPP, and SQLite. knows how to use tools like GIT
-						and Postman. solid skills with computer hardware and
-						troubleshooting.
-					</p>
+					<p></p>
 					<a
 						href="#skill"
-						class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm uppercase text-white shadow-xl transition duration-700 hover:bg-white hover:text-redhue"
+						class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm font-bold uppercase text-white shadow-xl transition duration-700 hover:bg-white hover:text-redhue"
 					>
 						My Skills
 					</a>
