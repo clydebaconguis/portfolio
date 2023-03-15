@@ -10,9 +10,9 @@ $(document).ready(function () {
 
 	$(".about-section").waypoint(function (direction) {
 		if (direction == "down") {
-			$("header").addClass("sticky top-0 z-50");
+			$("header").addClass("fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10");
 		} else {
-			$("header").removeClass("sticky top-0 z-50");
+			$("header").removeClass("fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10");
 		}
 	});
 

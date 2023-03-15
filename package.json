@@ -2,12 +2,9 @@
 	"name": "portfolio",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.php",
 	"scripts": {
 		"build": "tailwindcss -i ./input.css -o ./css/main.css",
-		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-		"start": "node index.js",
-		"heroku-postbuild": "npm run build"
+		"watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
 	},
 	"keywords": [
 		"portfolio"

@@ -4,16 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Work+Sans:wght@400;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Labrada:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
+
 		<script
 		src="https://kit.fontawesome.com/8717cab48c.js"
 		crossorigin="anonymous"
@@ -24,149 +23,137 @@
 		<title>Web Portfolio</title>
 	</head>
 
-	<body>
-		<!-- Navbar -->
-		<header id="home" class="z-50 bg-white bg-opacity-80">
-			<nav class="container relative mx-auto p-6">
-				<div class="flex items-center justify-between">
-					<!-- Logo -->
-					<!-- <span class="font-fontHeading text-xl font-bold md:text-3xl"
-						>Baconguis<span class="text-redhue">clyde</span>
-					</span> -->
-					<img class="w-9 sm:w-20" src="/img/logo.png" alt="logo">
-					<!-- Menu Items -->
-					<div class="hidden space-x-4 font-bold md:flex">
-						<a
-							href="#"
-							class="transition duration-700 ease-in-out hover:text-redhue"
-							>Home</a
+	<body class="font-fontHeading">
+		<div class="bg-bghero bg-no-repeat relative bg-cover object-contain lg:h-screen">
+			<!-- Navbar -->
+			<header id="home">
+				<nav class="container mx-auto p-6">
+					<div class="flex items-center justify-between">
+						<img class="w-10 md:w-12" src="/img/logo.png" alt="logo">
+						<!-- Menu Items -->
+						<div class="hidden font-medium space-x-7 text-white md:flex">
+							<a
+								href="#"
+								class="transition duration-700 ease-in-out hover:text-redhue"
+								>Home</a
+							>
+							<a
+								href="#about"
+								class="transition duration-700 ease-in-out  hover:text-redhue"
+								>About Me</a
+							>
+							<a
+								href="#journal"
+								class="transition duration-700 ease-in-out  hover:text-redhue"
+								>Journal</a
+							>
+							
+							<a
+								href="#project"
+								class="transition duration-700 ease-in-out  hover:text-redhue"
+								>Projects</a
+							>
+							<a
+								href="#contact"
+								class="transition duration-700 ease-in-out  hover:text-redhue"
+								>Contact</a
+							>
+						</div>
+
+						<!-- Hamburger Icon -->
+						<button
+							id="menu-btn"
+							title="sajdjf"
+							class="hamburger block focus:outline-none md:hidden"
 						>
-						<a
-							href="#about"
-							class="transition duration-700 ease-in-out  hover:text-redhue"
-							>About Me</a
-						>
-						<a
-							href="#education"
-							class="transition duration-700 ease-in-out  hover:text-redhue"
-							>Education</a
-						>
-						<a
-							href="#project"
-							class="transition duration-700 ease-in-out  hover:text-redhue"
-							>Projects</a
-						>
-						<a
-							href="#contact"
-							class="transition duration-700 ease-in-out  hover:text-redhue"
-							>Contact</a
-						>
+							<span class="hamburger-top"></span>
+							<span class="hamburger-middle"></span>
+							<span class="hamburger-bottom"></span>
+						</button>
 					</div>
-
-					<!-- Hamburger Icon -->
-					<button
-						id="menu-btn"
-						title="sajdjf"
-						class="hamburger block focus:outline-none md:hidden"
-					>
-						<span class="hamburger-top"></span>
-						<span class="hamburger-middle"></span>
-						<span class="hamburger-bottom"></span>
-					</button>
-				</div>
-
+				</nav>
 				<!-- Mobile Menu -->
 				<div class="md:hidden">
 					<div
 						id="menu"
-						class="absolute left-6 right-6 z-50 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-semibold drop-shadow-md sm:w-auto"
+						class="font-medium absolute left-0 right-0 text-sm z-50 hidden flex-col items-center self-end px-2 drop-shadow-md text-white sm:w-auto"
 					>
 						<a
 							href="#"
-							class="transition duration-700 ease-in-out hover:opacity-40"
+							class="transition duration-700 ease-in-out hover:bg-redhue hover:text-white hover:bg-opacity-70 text-center w-full p-4 rounded-md"
 							>Home</a
 						>
 						<a
 							href="#about"
-							class="transition duration-700 ease-in-out hover:opacity-40"
+							class="transition duration-700 ease-in-out hover:bg-redhue hover:text-white hover:bg-opacity-70 text-center w-full p-4 rounded-md"
 							>About Me</a
 						>
+
 						<a
-							href="#education"
-							class="transition duration-700 ease-in-out hover:opacity-40"
-							>Education</a
+							href="#journal"
+							class="transition duration-700 ease-in-out hover:bg-redhue hover:text-white hover:bg-opacity-70 text-center w-full p-4 rounded-md"
+							>Journal</a
 						>
+					
 						<a
 							href="#project"
-							class="transition duration-700 ease-in-out hover:opacity-40"
+							class="transition duration-700 ease-in-out hover:bg-redhue hover:text-white hover:bg-opacity-70 text-center w-full p-4 rounded-md"
 							>Projects</a
 						>
 						<a
 							href="#contact"
-							class="transition duration-700 ease-in-out hover:opacity-40"
+							class="transition duration-700 ease-in-out hover:bg-redhue hover:text-white hover:bg-opacity-70 text-center w-full p-4 rounded-md"
 							>Contact</a
 						>
 					</div>
 				</div>
-			</nav>
-		</header>
+				
+			</header>
 
-		<!-- Hero -->
-		<div
-			class="container relative mx-auto mt-16 flex-row-reverse items-center justify-center p-6 text-center md:flex"
-		>
-			<img
-				src="img/hero.jpeg"
-				alt="profile"
-				class="-z-20 mx-auto h-60 w-auto flex-1 rounded-md shadow-2xl md:ml-4 md:h-52 lg:h-60"
-			/>
-
-			<div class="my-5 flex-1 font-bold md:pr-5 md:text-start md:text-xl">
-				<p>
-					Hi there! My name is Clyde Baconguis I'm a Web Developer.
-				</p>
-
-				<a
-					href="#project"
-					class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm uppercase text-white shadow-xl shadow-gray-300 transition duration-700 hover:bg-white hover:text-redhue"
-				>
-					Portfolio
-				</a>
-			</div>
-
-			<img
-				src="img/computer.png"
-				alt="computer"
-				class="absolute right-2 bottom-0 z-30 hidden h-60 w-72 translate-y-16 md:block"
-			/>
-			<img
-				src="img/gear.png"
-				alt="computer"
-				class="absolute right-0 top-0 z-30 hidden h-32 w-32 -translate-y-10 md:block"
-			/>
-		</div>
-
-		<!-- Wave -->
-		<div style="height: 150px; overflow: hidden">
-			<svg
-				viewBox="0 0 500 150"
-				preserveAspectRatio="none"
-				style="height: 100%; width: 100%"
+			<!-- Hero -->
+			<div
+				class="container h-full mx-auto flex-row-reverse items-center p-6 justify-between text-center md:flex"
 			>
-				<path
-					d="M-26.90,21.22 C149.17,256.09 323.55,-62.65 507.52,28.13 L500.00,150.00 L0.00,150.00 Z"
-					style="stroke: none; fill: hsl(210, 100%, 60%)"
-				></path>
-			</svg>
+				<div class="flex-1 p-0">
+					<img src="img/hero-portrait.jpg" class="hero-portraint h-80 w-80 object-cover md:ml-auto md:mr-0 mx-auto" alt="portrait">
+				</div>
+
+				<div class="text-white flex-1 md:pr-5 md:text-start md:text-xl">
+					<p class="font-bold text-2xl">
+						Hi there! I'm <br> <span class="lg:text-red-500 lg:text-5xl">Clyde Baconguis</span>, <span class="lg:text-4xl">Junior Web Developer.</span>
+					</p>
+					<p>
+						Currently learning and finding opportunities, kung way swerte tig sukli internet cafe
+					</p>
+					<div class="flex space-x-5 md:items-start justify-center md:justify-start mt-4">
+						<a href="https://www.facebook.com/clyde.baconguis.1"
+							><i class="fa-brands fa-facebook hover:text-gray-400 text-2xl"></i></a>
+						<a href="https://github.com/clydebaconguis"
+							><i class="fa-brands fa-github hover:text-gray-400 text-2xl"></i
+						></a>
+						<a href="https://www.linkedin.com/in/clyde-baconguis-2baa78260/"
+							><i class="fa-brands fa-linkedin hover:text-gray-400 text-2xl"></i></a>
+					</div>
+
+					<div class="mt-4">
+						<a
+						href="#project"
+						class="w-full text-center mt-8 inline-block rounded-tl-md rounded-br-md border-2 border-redhue bg-redhue p-2 text-white md:w-auto md:py-1 md:px-8 md:text-base px-4 shadow-xl tracking-widest transition duration-700 hover:bg-white hover:text-redhue"
+					>
+						Portfolio
+					</a>
+					</div>
+
+				</div>
+			</div>
 		</div>
-		<!-- End of Wave -->
 
 		<!-- About Me -->
 		<section
 			id="about"
-			class="about-section m-0 bg-gradient-to-t from-cyan-500 to-bluehue pt-5 pb-12 text-center text-white"
+			class="about-section bg-gradient-to-t from-cyan-500 to-bluehue pt-5 pb-12 text-center text-white"
 		>
-			<h1 class="font-fontHeading text-5xl font-bold text-white">
+			<h1 class="mt-10 text-center text-white lg:text-4xl lg:font-black text-2xl font-extrabold">
 				About Me
 			</h1>
 			<div class="mx-auto mb-12 mt-2 h-1 w-20 bg-redhuelight"></div>
@@ -174,213 +161,157 @@
 			<div
 				class="container mx-auto items-center justify-between p-6 md:flex md:space-x-5"
 			>
-				<div>
-					<!-- <img
-						src="img/formal-attire.jpg"
-						alt="profile"
-						class="lg:m mx-auto h-72 w-auto flex-1 items-center rounded-md shadow-2xl md:h-96 md:w-72 lg:max-h-96"
-					/> -->
-				</div>
+			
+			<div class="flex-1 p-0">
+				<img src="img/profilepic2.jpg" class="hero-portraint bg-gradient-to-tr from-red-500 to-bluehue h-80 w-80 object-cover md:ml-auto md:mr-0 mx-auto" alt="portrait">
+			</div>
 
 				<div class="my-4 flex-1 md:p-5 lg:text-start">
 					<p>
-						Knowledgable of kotlin and android studio for mobile
-						development. Familiar of some frameworks like Laravel,
-						Vue, and React.
-					</p>
-					<br />
+						From the land of promise, Mindanao. Graduated Bachelor of Science in Information & Technology at Phinma Cagayan de Oro College. Former intern at Fligno Software Philippines, Inc.
+					</p><br>
 					<p>
-						SRE Intern at Fligno Software Philippines. Linux and AWS
-						cloud practioner.
+						Familiar of Javascript frameworks and general knowledge of how backend and frontend works. My target is to master Laravel and Reactjs. I am open to work and willing to be trained. Team player and fast learner.
 					</p>
-					<br />
-
-					<p></p>
-					<a
-						href="#skill"
-						class="mt-8 inline-block rounded-full border border-redhue bg-redhue py-1.5 px-4 text-sm font-bold uppercase text-white shadow-xl transition duration-700 hover:bg-white hover:text-redhue"
-					>
-						My Skills
-					</a>
 				</div>
 			</div>
 		</section>
 		<!-- About End -->
 
+		<!-- Journal -->
+		<section
+			id="journal"
+			class="journal-section pt-5 pb-12 text-center text-gray-800"
+		>
+			<h1 class="mt-10 text-center text-gray-800 lg:text-4xl lg:font-black text-2xl font-extrabold">
+				Journal
+			</h1>
+			<div class="mx-auto mt-2 h-1 w-20 bg-redhuelight"></div>
+			<h3 class="mb-12 mt-2">Internship Reflection</h3>
+
+			<div
+				class="container mx-auto items-center justify-between p-6 md:flex md:space-x-5"
+			>
+			
+				<div class="flex-1">
+					<div class="-translate-x-8 translate-y-3">
+						<img src="img/ojt-img.jpg" class="hover:scale-110 hover:border-blue-900 hover:rounded-md hover:border-4 transition journal-image h-52 w-60 object-cover" alt="portrait">
+					</div>
+
+					<div class="">
+						<img src="img/ojt-img2.jpg" class="hover:scale-110 hover:border-blue-900 hover:rounded-md hover:border-4 transition journal-image h-52 w-60 object-cover" alt="portrait">
+					</div>
+		
+					<div class="translate-x-8 -translate-y-3">
+						<img src="img/fligno-img.png" class="hover:scale-110 hover:border-blue-900 hover:rounded-md hover:border-4 transition journal-image h-52 w-60 object-contain" alt="portrait">
+					</div>
+				</div>
+
+				<div class="my-4 flex-1 md:p-5 lg:text-start">
+					<p>
+						We started our journey at Fligno with introduction of our SRE supervisor Mr. Kev a very well respected and hardworking leader. He is assign in teaching us the field of Site Reliability Engineering.      
+					</p><br>
+					<p>
+						Not wasting time we started learning Linux fundamentals and installing necessary softwares like Vagrant, Virtual Boxes, Terraform, terrugrunt, vscode and etc. After learning we have been given tasks to perform and also we take challenges to truly grasp its usages. 
+					</p><br>
+					<p>
+						After fully understanding servers and knowing how to setup nginx server, I immediately jump right to learning basic of Terraform and AWS. I created a free aws account, provision an EC2 instance manually.
+					</p><br>
+					<p>
+						I am so grateful because I was given the chance to learn basic Laravel crud api and Reactjs. I was able to fully grasp the roles of backend and frontend development. Fligno truly gave opportunities to those students who are willing to learn in IT industry and I'm the proof of their services. Thank you once again Fligno and Teams, See you around.
+					</p><br>
+				</div>
+			</div>
+		</section>
+		<!-- Journal end -->
+
 		<!-- Skills -->
-		<div class="bg-gray-700 py-20" id="skill">
-			<h1
-				class="text-center font-fontHeading text-5xl font-bold text-white after:mx-auto after:mb-20 after:mt-2 after:block after:h-1 after:w-20 after:bg-bluehue md:mt-40"
+		<!-- <div class="py-20 md:py-10" id="skill"> -->
+			<!-- <h1
+				class="text-center font-fontHeading text-5xl font-bold text-white after:mx-auto after:mb-20 after:mt-2 after:block after:h-1 after:w-20 after:bg-bluehue md:mt-5"
 			>
 				Skills
-			</h1>
+			</h1> -->
 
-			<ul class="flex flex-wrap items-center justify-center">
+			<!-- <ul class="flex flex-wrap items-center justify-around">
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+					
 				>
 					<div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							class="mx-auto my-1 h-16"
-						>
-							<linearGradient
-								id="a"
-								x1="-125.602"
-								x2="-124.485"
-								y1="61.11"
-								y2="62.227"
-								gradientTransform="matrix(20 0 0 -20 2508 1244.27)"
-								gradientUnits="userSpaceOnUse"
-							>
-								<stop offset=".108" stop-color="#c757bc" />
-								<stop offset=".173" stop-color="#cd5ca9" />
-								<stop offset=".492" stop-color="#e8744f" />
-								<stop offset=".716" stop-color="#f88316" />
-								<stop offset=".823" stop-color="#ff8900" />
-							</linearGradient>
-							<path
-								fill="url(#a)"
-								d="M12.05 0 0 12.672V24l12.032-12.054L24 0H12.05z"
-							/>
-							<linearGradient
-								id="b"
-								x1="-125.017"
-								x2="-124.473"
-								y1="60.797"
-								y2="61.341"
-								gradientTransform="matrix(20 0 0 -20 2508 1244.27)"
-								gradientUnits="userSpaceOnUse"
-							>
-								<stop offset=".296" stop-color="#00afff" />
-								<stop offset=".694" stop-color="#5282ff" />
-								<stop offset="1" stop-color="#945dff" />
-							</linearGradient>
-							<path
-								fill="url(#b)"
-								d="m0 24 12.032-12.053L24 24H0z"
-							/>
-							<linearGradient
-								id="c"
-								x1="-125.414"
-								x2="-125.033"
-								y1="61.882"
-								y2="62.264"
-								gradientTransform="matrix(20 0 0 -20 2508 1244.27)"
-								gradientUnits="userSpaceOnUse"
-							>
-								<stop offset=".296" stop-color="#00afff" />
-								<stop offset=".694" stop-color="#5282ff" />
-								<stop offset="1" stop-color="#945dff" />
-							</linearGradient>
-							<path fill="url(#c)" d="M0 0h12.05L0 12.672V0z" />
-						</svg>
-						<h3 class="font-semibold text-gray-200">Kotlin</h3>
+						<i class="fa-brands fa-html5 text-5xl text-redhue"></i>
 					</div>
 				</li>
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+					
 				>
 					<div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							class="mx-auto my-1 h-16"
-						>
-							<path
-								fill="#00ffff"
-								d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"
-								class="color000000 svgShape"
-							/>
-						</svg>
-						<h3 class="font-semibold text-gray-200">Tailwind</h3>
+						<i class="fa-brands fa-css3 text-5xl text-bluehue"></i>
 					</div>
 				</li>
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+					
 				>
 					<div>
-						<i class="fa-brands fa-html5 text-7xl text-redhue"></i>
-						<h3 class="font-semibold text-gray-200">HTML</h3>
+						<i class="fa-brands fa-js text-5xl text-yellow-300"></i>
 					</div>
 				</li>
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
-				>
-					<div>
-						<i class="fa-brands fa-css3 text-7xl text-bluehue"></i>
-						<h3 class="font-semibold text-gray-200">CSS</h3>
-					</div>
-				</li>
-				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
-				>
-					<div>
-						<i class="fa-brands fa-js text-7xl text-yellow-300"></i>
-						<h3 class="font-semibold text-gray-200">Javascript</h3>
-					</div>
-				</li>
-				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+					
 				>
 					<div>
 						<i
-							class="fa-brands fa-laravel text-7xl text-redhue"
+							class="fa-brands fa-laravel text-5xl text-redhue"
 						></i>
-						<h3 class="font-semibold text-gray-200">Laravel</h3>
 					</div>
 				</li>
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+					
 				>
 					<div>
-						<i class="fa-brands fa-php text-7xl text-bluehue"></i>
-						<h3 class="font-semibold text-gray-200">PHP</h3>
+						<i class="fa-brands fa-php text-5xl text-bluehue"></i>
 					</div>
 				</li>
 				<li
-					class="m-2 w-40 rounded-md bg-gradient-to-tr from-gray-600 to-gray-500 p-4 text-center"
+				
 				>
 					<div>
 						<i
-							class="fa-brands fa-react text-7xl text-yellow-300"
+							class="fa-brands fa-react text-5xl text-yellow-300"
 						></i>
-						<h3 class="font-semibold text-gray-200">React</h3>
 					</div>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 		<!-- End of Skills -->
 
 		<!-- Portfolio -->
-		<section class="py-20" id="project">
-			<h1 class="text-center font-fontHeading text-5xl font-bold">
+		<section class="portfolio-section py-12 bg-bgproject bg-no-repeat bg-cover" id="project">
+			<h1 class="text-center mt-2 text-gray-50 lg:text-4xl lg:font-black text-2xl font-extrabold">
 				Portfolio
 			</h1>
 			<div class="mx-auto mb-20 mt-2 h-1 w-20 bg-bluehue"></div>
-			<div class="container mx-auto flex flex-wrap items-center">
-				<figure class="w-1/3 flex-1 overflow-hidden bg-black">
+			<div class="project-wrapper container mx-auto md:flex flex-wrap items-center">
+				<figure class="flex-1 overflow-hidden m-2 rounded-lg bg-black">
 					<img
-						src="img/portfolio.png"
+						src="img/project-img1.png"
 						alt="Portfolio image"
 						class="h-60 w-full scale-125 opacity-70 transition-all duration-700 ease-in-out hover:scale-100 hover:opacity-100"
 					/>
-					<p class="text-center text-white">Website</p>
+					<p class="text-center text-white">Poultry Ordering</p>
 				</figure>
 
-				<figure class="w-1/3 flex-1 overflow-hidden bg-black">
+				<figure class="flex-1 overflow-hidden m-2 rounded-lg bg-black">
 					<img
-						src="img/poultryapp.png"
+						src="img/project-img1.png"
 						alt="Portfolio image"
 						class="h-60 w-full scale-125 opacity-70 transition-all duration-700 ease-in-out hover:scale-100 hover:opacity-100"
 					/>
 					<p class="text-center text-white">Mobile</p>
 				</figure>
 
-				<figure class="w-1/3 flex-1 overflow-hidden bg-black">
+				<figure class="flex-1 overflow-hidden m-2 rounded-lg bg-black">
 					<img
-						src="img/api.png"
+						src="img/project-img1.png"
 						alt="Portfolio image"
 						class="h-60 w-full scale-125 opacity-70 transition-all duration-700 ease-in-out hover:scale-100 hover:opacity-100"
 					/>
@@ -394,116 +325,75 @@
 		<section class="bg-gray-200 pb-20" id="contact">
 			<div class="container mx-auto p-6">
 				<h1
-					class="mt-20 text-center font-fontHeading text-5xl font-bold"
+					class="mt-10 text-center text-gray-800 lg:text-4xl lg:font-black text-2xl font-extrabold"
 				>
 					Contact Me
 				</h1>
 				<div class="mx-auto mb-20 mt-2 h-1 w-20 bg-bluehue"></div>
 
-				<div class="md:flex md:space-x-6">
-					<div class="flex-1">
-						<!-- Info -->
-						<div class="mb-4 rounded-xl bg-orange-50 p-6">
-							<p class="mb-4">
-								<i
-									class="fa-solid fa-envelope mr-1 text-orange-900"
-								></i>
-								clydebaconguis3737@gmail.com
-							</p>
-							<p class="mb-4">
-								<i
-									class="fa-solid fa-phone mr-1 text-orange-900"
-								></i>
-								(+63) 955-458-7790
-							</p>
-							<p>
-								<i
-									class="fa-solid fa-location-dot mr-1 text-orange-900"
-								></i>
-								Gusa, Cagayan de Oro City, Misamis Oriental
-							</p>
+				<div class="mt-10 sm:mt-0">
+					<div class="md:grid md:grid-cols-3 md:gap-6">
+					  <div class="md:col-span-1">
+						<div class="px-4 sm:px-0">
+						  <h3 class="text-base font-semibold leading-6 text-gray-900">Keep In Touch</h3>
+						  <p class="mt-1 text-sm text-gray-600">0955 458 7790</p>
+						  <p class="mt-1 text-sm text-gray-600">clydebaconguis3737@gmail.com</p>
 						</div>
-
-						<!-- Map frame -->
-
-						<p class="mt-5 rounded-xl border-2 border-gray-700">
-							<iframe
-								class="h-60 rounded-xl"
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31571.061957639206!2d124.66100656637917!3d8.462109659257145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2af3ed45adf%3A0x5768c7817c99b735!2sGusa%2C%20Cagayan%20de%20Oro%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1656248797439!5m2!1sen!2sph"
-								width="100%"
-								height="450"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade"
-							></iframe>
-						</p>
+					  </div>
+					  <div class="mt-5 md:col-span-2 md:mt-0">
+						<form action="https://formsubmit.co/d6248f0a13e4b0ce10b4d93309f9459c" method="POST">
+						  <div class="overflow-hidden shadow sm:rounded-md">
+							<div class="bg-white px-4 py-5 sm:p-6">
+							  <div class="grid grid-cols-6 gap-6">
+								<div class="col-span-6 sm:col-span-3">
+								  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+								  <input type="text" name="first-name" id="first-name" autocomplete="given-name" required class="px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+								</div>
+				  
+								<div class="col-span-6 sm:col-span-3">
+								  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+								  <input type="text" name="last-name" id="last-name" autocomplete="family-name" required class="px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+								</div>
+				  
+								<div class="col-span-6 sm:col-span-4">
+								  <label for="email-address" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+								  <input type="text" name="email-address" id="email-address" autocomplete="email" required class="px-2 mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+								</div>
+		
+								<div class="col-span-6 sm:col-span-4">
+									<label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+									<div class="mt-2">
+									  <textarea id="about" name="about" rows="3" required class="px-2 mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6" placeholder="lets connect, write here"></textarea>
+									</div>
+								  </div>
+							   </div>
+							</div>
+							<div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+							  <button type="submit" class="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Save</button>
+							</div>
+						  </div>
+						</form>
+					  </div>
 					</div>
-
-					<!-- form -->
-					<form
-						action="https://formsubmit.co/d6248f0a13e4b0ce10b4d93309f9459c"
-						method="POST"
-						class="flex-1 rounded-t-xl p-6 md:mt-0"
-					>
-						<div class="my-6">
-							<input
-								type="text"
-								name="name"
-								required
-								placeholder="Enter full name"
-								class="mt-1 w-full rounded-full bg-gray-700 py-2 px-4 text-white outline-none"
-							/>
-						</div>
-						<div>
-							<input
-								type="email"
-								name="email"
-								required
-								placeholder="Enter valid email"
-								class="mt-1 w-full rounded-full bg-gray-700 py-2 px-4 text-white outline-none"
-							/>
-						</div>
-						<div class="my-6">
-							<textarea
-								name="message"
-								cols="30"
-								rows="5"
-								class="mt-1 w-full rounded-md bg-gray-700 py-2 px-4 text-white outline-none"
-								required
-								placeholder="Type your message"
-							></textarea>
-						</div>
-						<input
-							type="submit"
-							name="submit"
-							class="rounded-full border border-gray-700 bg-white px-4 py-1.5 text-sm uppercase text-black shadow-xl transition delay-200 duration-500 ease-in-out hover:bg-black hover:text-white"
-							value="Send"
-						/>
-					</form>
 				</div>
 			</div>
 		</section>
 		<!-- End Contact Form -->
 
 		<!-- Footer -->
-		<footer class="bg-gray-800">
+		<footer class="bg-zinc-900">
 			<div
 				class="container mx-auto flex flex-wrap justify-center justify-between py-6 font-serif text-base text-gray-500 md:text-lg"
 			>
 				<p class="hover:text-gray-400">clydebaconguis &copy; <span id="year"></span></p>
 				<div class="flex space-x-5 text-center">
 					<a href="https://www.facebook.com/clyde.baconguis.1"
-						><i
-							class="fa-brands fa-facebook-f hover:text-gray-400"
-						></i
-					></a>
+						><i class="fa-brands fa-facebook hover:text-gray-400""></i></a>
 					<a href="https://github.com/clydebaconguis"
 						><i class="fa-brands fa-github hover:text-gray-400"></i
 					></a>
 					<a href="#"
-						><i class="fa-brands fa-tiktok hover:text-gray-400"></i
-					></a>
+						><i class="fa-brands fa-linkedin hover:text-gray-400""></i></a>
 				</div>
 			</div>
 		</footer>
@@ -512,9 +402,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 		<script src="./js/script.js"></script>
+		<!-- <script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script> -->
 	</body>
 
-	<script>
-		document.getElementById("year").innerHTML = new Date().getFullYear();
-	</script>
 </html>

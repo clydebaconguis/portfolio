@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	font-family: "Work Sans", sans-serif;
+	font-family: "Labrada", serif;
 	background-color: white;
 }
 
@@ -28,7 +28,7 @@ body {
 	left: 0;
 	width: 24px;
 	height: 2px;
-	background: #000;
+	background: #fff;
 	transform: rotate(0);
 	transition: all 0.5s;
 }
@@ -68,3 +68,18 @@ body {
 	top: 50%;
 	transition: all 1.5s ease-in-out;
 }
+
+.hero-portraint {
+	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62% ;
+}
+
+.aboutme-pic {
+	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62% ;
+}
+/* 
+.journal-image {
+	border-radius: 44% 56% 54% 46% / 89% 43% 57% 11% ;
+} */
+
+
+

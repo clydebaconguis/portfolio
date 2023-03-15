@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./*.html"],
+	content: ["./*.html", "./js/script.js"],
 	theme: {
 		screens: {
 			sm: "480px",
@@ -10,7 +10,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				fontHeading: "Edu VIC WA NT Beginner, cursive",
+				fontHeading: "Labrada, serif",
 			},
 			colors: {
 				bluehue: "hsl(210, 100%, 60%)",
@@ -18,7 +18,9 @@ module.exports = {
 				redhuelight: "hsl(15, 100%, 70%)",
 			},
 			backgroundImage: {
-				portfolio: "url('/img/portfolio01.jpeg')",
+				bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/bg-hero.jpg')", 
+				bgproject: "url('/img/bg-main.jpg')", 
+				bgfligno: "url('/img/fligno-img.png')", 
 			},
 		},
 	},
