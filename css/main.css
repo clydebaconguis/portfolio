@@ -1199,6 +1199,14 @@ body {
      object-fit: contain;
 }
 
+.portfolio-section {
+  background-image:url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
