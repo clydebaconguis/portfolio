@@ -893,7 +893,7 @@ video {
 }
 
 .bg-bghero {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/bg-hero.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg');
 }
 
 .bg-gradient-to-t {
@@ -905,7 +905,7 @@ video {
 }
 
 .bg-bgproject {
-  background-image: url('/img/bg-main.jpg');
+  background-image: url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg');
 }
 
 .from-cyan-500 {
