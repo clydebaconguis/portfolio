@@ -20,6 +20,7 @@
 		"node": "16.14.0"
 	},
 	"dependencies": {
+		"flowbite": "^1.6.4",
 		"serve": "^14.0.1"
 	}
 }
