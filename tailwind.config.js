@@ -18,8 +18,8 @@ module.exports = {
 				redhuelight: "hsl(15, 100%, 70%)",
 			},
 			backgroundImage: {
-				bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg')", 
-				bgproject: "url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg')", 
+				// bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg')", 
+				// bgproject: "url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg')", 
 			},
 		},
 	},

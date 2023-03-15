@@ -892,20 +892,12 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-bghero {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg');
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-
-.bg-bgproject {
-  background-image: url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg');
 }
 
 .from-cyan-500 {
