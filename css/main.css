@@ -1193,6 +1193,10 @@ body {
 
 .bg-bghero {
   background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .sticky {
@@ -1267,11 +1271,6 @@ body {
 .aboutme-pic {
   border-radius: 77% 23% 26% 74% / 38% 30% 70% 62% ;
 }
-
-/* 
-.journal-image {
-	border-radius: 44% 56% 54% 46% / 89% 43% 57% 11% ;
-} */
 
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
@@ -1617,6 +1616,7 @@ body {
     color: rgb(239 68 68 / var(--tw-text-opacity));
   }
 }
+
 
 
 
