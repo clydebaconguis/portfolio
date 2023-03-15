@@ -1199,6 +1199,10 @@ body {
   background-color: white;
 }
 
+.bg-bghero {
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg');
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
