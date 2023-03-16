@@ -24,6 +24,6 @@ module.exports = {
 		},
 	},
 	plugins: [
-		require('https://clydebaconguis.github.io/portfolio/node_modules/flowbite/plugin')
+		require('flowbite/plugin')
 	],
 };
