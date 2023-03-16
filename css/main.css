@@ -1775,10 +1775,6 @@ input:checked + .toggle-bg {
   text-align: right;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-fontHeading {
   font-family: Labrada, serif;
 }
