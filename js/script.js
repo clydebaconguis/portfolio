@@ -15,6 +15,16 @@ $(document).ready(function () {
 			$("header").removeClass("fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10");
 		}
 	});
+	$("#contact").waypoint(function (direction) {
+		if (direction == "down") {
+			$(".nav-menu").removeClass("text-white");
+			$(".nav-menu").addClass("text-black");
+		} else {
+			$(".nav-menu").removeClass("text-black");
+			$(".nav-menu").addClass("text-white");
+
+		}
+	});
 
 	// $(".scroll-to-about").click(function () {
 	// 	$("body, html").animate(

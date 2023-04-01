@@ -16,6 +16,7 @@ module.exports = {
 				bluehue: "hsl(210, 100%, 60%)",
 				redhue: "hsl(15, 100%, 60%)",
 				redhuelight: "hsl(15, 100%, 70%)",
+				brandNameColor: "hsl(347, 80%, 55%)",
 			},
 			backgroundImage: {
 				// bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg')", 
