@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./*.html", "./js/script.js","./node_modules/flowbite/**/*.js"],
+	content: ["./*.html", "./js/script.js", "./node_modules/flowbite/**/*.js"],
 	theme: {
 		screens: {
 			sm: "480px",
@@ -11,6 +11,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				fontHeading: "Labrada, serif",
+				fontName: "Merriweather, serif",
 			},
 			colors: {
 				bluehue: "hsl(210, 100%, 60%)",
@@ -19,12 +20,10 @@ module.exports = {
 				brandNameColor: "hsl(347, 80%, 55%)",
 			},
 			backgroundImage: {
-				// bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg')", 
-				// bgproject: "url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg')", 
+				// bghero: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg')",
+				// bgproject: "url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg')",
 			},
 		},
 	},
-	plugins: [
-		require('flowbite/plugin')
-	],
+	plugins: [require("flowbite/plugin")],
 };

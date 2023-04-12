@@ -8,14 +8,19 @@ body {
 }
 
 .bg-bghero {
-	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg');
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.7)
+		),
+		url("https://clydebaconguis.github.io/portfolio/img/bg-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: contain;
 }
 
 .portfolio-section {
-	background-image:url('https://clydebaconguis.github.io/portfolio/img/bg-main.jpg');
+	background-image: url("https://clydebaconguis.github.io/portfolio/img/bg-projects.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: contain;
@@ -72,25 +77,10 @@ body {
 	transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-/* portfolio project container on hover */
-
-.portfolio:hover > #overlay {
-	opacity: 0.8;
-}
-.portfolio:hover > #content {
-	opacity: 1;
-	top: 50%;
-	transition: all 1.5s ease-in-out;
-}
-
 .hero-portraint {
-	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62% ;
+	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62%;
 }
 
 .aboutme-pic {
-	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62% ;
+	border-radius: 77% 23% 26% 74% / 38% 30% 70% 62%;
 }
-
-
-
-

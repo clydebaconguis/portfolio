@@ -10,9 +10,17 @@ $(document).ready(function () {
 
 	$(".about-section").waypoint(function (direction) {
 		if (direction == "down") {
-			$("header").addClass("fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10");
+			$("header").addClass(
+				"fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10"
+			);
+			$(".nav-menu").removeClass("text-white");
+			$(".nav-menu").addClass("text-black");
 		} else {
-			$("header").removeClass("fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10");
+			$("header").removeClass(
+				"fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10"
+			);
+			$(".nav-menu").removeClass("text-black");
+			$(".nav-menu").addClass("text-white");
 		}
 	});
 	$("#contact").waypoint(function (direction) {
@@ -22,7 +30,15 @@ $(document).ready(function () {
 		} else {
 			$(".nav-menu").removeClass("text-black");
 			$(".nav-menu").addClass("text-white");
-
+		}
+	});
+	$(".portfolio-section").waypoint(function (direction) {
+		if (direction == "down") {
+			$(".nav-menu").removeClass("text-black");
+			$(".nav-menu").addClass("text-white");
+		} else {
+			$(".nav-menu").removeClass("text-white");
+			$(".nav-menu").addClass("text-black");
 		}
 	});
 
