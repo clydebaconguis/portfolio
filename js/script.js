@@ -15,32 +15,41 @@ $(document).ready(function () {
 			);
 			$(".nav-menu").removeClass("text-white");
 			$(".nav-menu").addClass("text-black");
+			$("#menu").addClass("text-black");
+			$(".hamburger-top").addClass("bg-black");
+			$(".hamburger-middle").addClass("bg-black");
+			$(".hamburger-bottom").addClass("bg-black");
 		} else {
 			$("header").removeClass(
 				"fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10"
 			);
 			$(".nav-menu").removeClass("text-black");
 			$(".nav-menu").addClass("text-white");
+			$(".hamburger-top").removeClass("bg-black");
+			$(".hamburger-middle").removeClass("bg-black");
+			$(".hamburger-bottom").removeClass("bg-black");
+			$("#menu").removeClass("text-black");
 		}
 	});
 	$("#contact").waypoint(function (direction) {
 		if (direction == "down") {
 			$(".nav-menu").removeClass("text-white");
 			$(".nav-menu").addClass("text-black");
-		} else {
-			$(".nav-menu").removeClass("text-black");
-			$(".nav-menu").addClass("text-white");
 		}
+		// else {
+		// 	$(".nav-menu").removeClass("text-black");
+		// 	$(".nav-menu").addClass("text-white");
+		// }
 	});
-	$(".portfolio-section").waypoint(function (direction) {
-		if (direction == "down") {
-			$(".nav-menu").removeClass("text-black");
-			$(".nav-menu").addClass("text-white");
-		} else {
-			$(".nav-menu").removeClass("text-white");
-			$(".nav-menu").addClass("text-black");
-		}
-	});
+	// $(".portfolio-section").waypoint(function (direction) {
+	// 	if (direction == "down") {
+	// 		$(".nav-menu").removeClass("text-black");
+	// 		$(".nav-menu").addClass("text-white");
+	// 	} else {
+	// 		$(".nav-menu").removeClass("text-white");
+	// 		$(".nav-menu").addClass("text-black");
+	// 	}
+	// });
 
 	// $(".scroll-to-about").click(function () {
 	// 	$("body, html").animate(

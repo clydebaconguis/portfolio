@@ -19,12 +19,12 @@ body {
 	object-fit: contain;
 }
 
-.portfolio-section {
+/* .portfolio-section {
 	background-image: url("https://clydebaconguis.github.io/portfolio/img/bg-projects.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: contain;
-}
+} */
 
 .sticky {
 	position: -webkit-sticky;
@@ -47,7 +47,6 @@ body {
 	left: 0;
 	width: 24px;
 	height: 2px;
-	background: #fff;
 	transform: rotate(0);
 	transition: all 0.5s;
 }
