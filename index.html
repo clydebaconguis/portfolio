@@ -17,6 +17,12 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
 
+        <!-- animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
 		<script
 		src="https://kit.fontawesome.com/8717cab48c.js"
 		crossorigin="anonymous"
@@ -117,18 +123,18 @@
 			<div
 				class="lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 container mx-auto flex-row-reverse mt-5 p-4 justify-between text-center md:flex"
 			>
-				<div class="flex-1 p-0">
+				<div class="flex-1 p-0 animate__animated animate__bounceIn">
 					<img src="img/hero-portrait.jpg" class="hero-portraint h-80 w-80 object-cover md:ml-auto md:mr-0 mx-auto" alt="portrait">
 				</div>
 
 				<div class="text-white flex-1 md:pr-5 md:text-start md:text-xl">
-					<p class="font-medium">
+					<p class="font-medium animate__animated animate__pulse">
 						Hi there! I'm <br> <span class="lg:text-brandNameColor font-fontName font-bold lg:text-5xl">Clyde Baconguis</span>, <span class="lg:text-2xl font-fontName">aspiring software developer.</span>
 					</p>
-					<p>
+					<p class="animate__animated animate__pulse">
 						My skills include Reactjs, CSS, HTML, and Javascript.
 					</p>
-					<div class="flex space-x-5 md:items-start justify-center md:justify-start mt-4">
+					<div class="animate__animated animate__backInDown flex space-x-5 md:items-start justify-center md:justify-start mt-4">
 						<a href="https://www.facebook.com/clyde.baconguis.1"
 							><i class="fa-brands fa-facebook hover:text-gray-400 text-2xl"></i></a>
 						<a href="https://github.com/clydebaconguis"
@@ -141,7 +147,7 @@
 					<div class="mt-4">
 						<a
 						href="#project"
-						class="w-full text-center mt-8 inline-block rounded-tl-md font-bold rounded-br-md border-2 border-redhue p-2 text-redhue md:w-auto md:py-1 md:px-8 md:text-base px-4 shadow-xl tracking-widest transition duration-700 hover:bg-redhue hover:text-white hover:rounded font-fontName"
+						class="animate__animated animate__backInLeft w-full text-center mt-8 inline-block rounded-tl-md font-bold rounded-br-md border-2 border-redhue p-2 text-redhue md:w-auto md:py-1 md:px-8 md:text-base px-4 shadow-xl tracking-widest transition duration-700 hover:bg-redhue hover:text-white hover:rounded font-fontName"
 					>
 						Portfolio
 					</a>
@@ -186,7 +192,7 @@
                 Projects
             </h1>
             <div class="container mx-auto lg:flex flex-wrap items-center justify-between">
-                <div class="m-1">
+                <div class="m-1 project-box">
                     <div class="overflow-hidden rounded shadow hover:shadow-lg">
                         <a href="https://github.com/clydebaconguis/LaraPoultryApi.git">
                             <img
@@ -198,7 +204,7 @@
                     </div>
                     <p class="text-center">Laravel Web and Api</p>
                 </div>
-                <div class="m-1">
+                <div class="m-1 project-box">
                     <div class="overflow-hidden rounded shadow hover:shadow-lg">
                         <a href="https://github.com/clydebaconguis/realtor-clone-react.git">
                             <img
@@ -210,7 +216,7 @@
                     </div>
                     <p class="text-center">Realtor Clone</p>
                 </div>
-                <div class="m-1">
+                <div class="m-1 project-box">
                     <div class="overflow-hidden rounded shadow hover:shadow-lg">
                         <a href="https://github.com/clydebaconguis/portfolio.git">
                             <img
@@ -224,7 +230,7 @@
                 </div>
             </div>
             <div class="container mx-auto md:flex flex-wrap items-center mt-5 justify-between">
-                <div class="m-1">
+                <div class="m-1 project-box">
                     <div class="overflow-hidden rounded shadow hover:shadow-lg">
                         <a href="https://github.com/clydebaconguis/all-in-one-poultry.git">
                             <img
@@ -242,12 +248,12 @@
 		<!-- End Portfolio -->
 
 		<!-- Contact Form -->
-		<section class="py-16 bg-gray-50" id="contact">
+		<section class="contact-section py-16 bg-gray-50" id="contact">
 			<div class="container mx-auto">
-				<h1 class="text-center text-gray-800 text-2xl font-fontName">
+				<h1 class="contact-title text-center text-gray-800 text-2xl font-fontName">
                     Contact Me
                 </h1>
-                <div class="mt-1 text-center">
+                <div class="mt-1 text-center contact-title">
                     <h3 class="text-base font-semibold leading-6 text-gray-900">Keep In Touch</h3>
                     <p class="mt-1 text-sm text-gray-600">0955-458-7790</p>
                     <p class="mt-1 mb-4 text-sm text-gray-600">clydebaconguis3737@gmail.com</p>

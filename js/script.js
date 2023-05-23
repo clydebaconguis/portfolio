@@ -103,25 +103,30 @@ $(document).ready(function () {
 		});
 
 	// // Animation scroll
-	// $(".js--about-section").waypoint(
-	// 	function (direction) {
-	// 		$(".js--about-fade").addClass("animate__animated animate__fadeIn");
-	// 	},
-	// 	{
-	// 		offset: "50%",
-	// 	}
-	// );
+	$(".about-section").waypoint(
+		function (direction) {
+			$(".about-section").addClass("animate__animated animate__fadeIn");
+		},
+		{
+			offset: "50%",
+		}
+	);
 
-	// $(".js--service-section").waypoint(
-	// 	function (direction) {
-	// 		$(".js--service-box").addClass("animate__animated animate__zoomIn");
-	// 	},
-	// 	{
-	// 		offset: "50%",
-	// 	}
-	// );
+	$(".portfolio-section").waypoint(
+		function (direction) {
+			$(".project-box").addClass("animate__animated animate__zoomIn");
+		},
+		{
+			offset: "50%",
+		}
+	);
 
-	// $(".js--package-section").waypoint(function (direction) {
-	// 	$(".js--enterprise").addClass("animate__animated animate__pulse");
-	// });
+	$(".contact-section").waypoint(
+		function (direction) {
+			$(".contact-title").addClass("animate__animated animate__pulse");
+		},
+		{
+			offset: "50%",
+		}
+	);
 });
