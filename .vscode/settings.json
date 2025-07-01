@@ -1,3 +1,10 @@
 {
-	"liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+    "editor.fontSize": 12,
+    // "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Monaspace Krypton', monospace",
+    "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
+    "editor.fontLigatures": true,
+
+
 }
