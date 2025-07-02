@@ -29,22 +29,69 @@
 		></script>
 		
 
-		<title>Baconguis Clyde</title>
-
 		<style>
-			.nav-link {
-				@apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors;
+			/* Custom animations */
+			@keyframes float1 {
+				0%, 100% { transform: translate(0, 0); }
+				50% { transform: translate(-20px, -20px); }
 			}
-			.nav-link.active {
-				@apply text-white bg-gray-700;
+			@keyframes float2 {
+				0%, 100% { transform: translate(0, 0); }
+				50% { transform: translate(15px, 15px); }
 			}
-			.mobile-nav-link {
-				@apply text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium;
+			@keyframes float3 {
+				0%, 100% { transform: translate(0, 0); }
+				50% { transform: translate(10px, -15px); }
 			}
-			.mobile-nav-link.active {
-				@apply text-white bg-gray-900;
+			.animate-float1 { animation: float1 8s ease-in-out infinite; }
+			.animate-float2 { animation: float2 10s ease-in-out infinite; }
+			.animate-float3 { animation: float3 12s ease-in-out infinite; }
+			
+			.animate-spin-slow {
+				animation: spin 20s linear infinite;
+			}
+			@keyframes spin {
+				from { transform: rotate(0deg); }
+				to { transform: rotate(360deg); }
+			}
+			
+			/* Button styles */
+			.btn-portfolio {
+				display: inline-flex;
+				align-items: center;
+				padding: 12px 24px;
+				background: transparent;
+				color: white;
+				border: 2px solid #818cf8;
+				border-radius: 8px;
+				font-weight: 600;
+				transition: all 0.3s ease;
+			}
+			.btn-portfolio:hover {
+				background: #4f46e5;
+				transform: translateY(-2px);
+				box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
+			}
+			
+			.btn-resume {
+				display: inline-flex;
+				align-items: center;
+				padding: 12px 24px;
+				background: #4f46e5;
+				color: white;
+				border: 2px solid #4f46e5;
+				border-radius: 8px;
+				font-weight: 600;
+				transition: all 0.3s ease;
+			}
+			.btn-resume:hover {
+				background: #4338ca;
+				transform: translateY(-2px);
+				box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
 			}
 		</style>
+
+		<title>Baconguis Clyde</title>
 	</head>
 
 	<body class="font-fontHeading">
@@ -178,68 +225,6 @@
 				</div>
 			</div>
 		</section>
-
-		<style>
-			/* Custom animations */
-			@keyframes float1 {
-				0%, 100% { transform: translate(0, 0); }
-				50% { transform: translate(-20px, -20px); }
-			}
-			@keyframes float2 {
-				0%, 100% { transform: translate(0, 0); }
-				50% { transform: translate(15px, 15px); }
-			}
-			@keyframes float3 {
-				0%, 100% { transform: translate(0, 0); }
-				50% { transform: translate(10px, -15px); }
-			}
-			.animate-float1 { animation: float1 8s ease-in-out infinite; }
-			.animate-float2 { animation: float2 10s ease-in-out infinite; }
-			.animate-float3 { animation: float3 12s ease-in-out infinite; }
-			
-			.animate-spin-slow {
-				animation: spin 20s linear infinite;
-			}
-			@keyframes spin {
-				from { transform: rotate(0deg); }
-				to { transform: rotate(360deg); }
-			}
-			
-			/* Button styles */
-			.btn-portfolio {
-				display: inline-flex;
-				align-items: center;
-				padding: 12px 24px;
-				background: transparent;
-				color: white;
-				border: 2px solid #818cf8;
-				border-radius: 8px;
-				font-weight: 600;
-				transition: all 0.3s ease;
-			}
-			.btn-portfolio:hover {
-				background: #4f46e5;
-				transform: translateY(-2px);
-				box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
-			}
-			
-			.btn-resume {
-				display: inline-flex;
-				align-items: center;
-				padding: 12px 24px;
-				background: #4f46e5;
-				color: white;
-				border: 2px solid #4f46e5;
-				border-radius: 8px;
-				font-weight: 600;
-				transition: all 0.3s ease;
-			}
-			.btn-resume:hover {
-				background: #4338ca;
-				transform: translateY(-2px);
-				box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
-			}
-		</style>
 
 		<!-- Enhanced About Section -->
 		<section id="about" class="py-20 bg-white">
