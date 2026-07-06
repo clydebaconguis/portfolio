@@ -1,132 +1,137 @@
-$(document).ready(function () {
-	const btn = document.getElementById("menu-btn");
-	const nav = document.getElementById("menu");
+// ===== Terminal Portfolio — interactions =====
+(function () {
+	"use strict";
 
-	btn.addEventListener("click", () => {
-		btn.classList.toggle("open");
-		nav.classList.toggle("flex");
-		nav.classList.toggle("hidden");
-	});
+	// ---- Boot sequence ----
+	const boot = document.getElementById("boot");
+	const bootLog = document.getElementById("boot-log");
+	const bootBar = document.getElementById("boot-bar");
+	const bootLines = [
+		"[  OK  ] Mounting portfolio filesystem...",
+		"[  OK  ] Loading profile: clyde.baconguis",
+		"[  OK  ] Starting laravel.service",
+		"[  OK  ] Starting react.service",
+		"[  OK  ] Starting flutter.service",
+		"[  OK  ] Reached target: ready.",
+	];
 
-	$(".about-section").waypoint(function (direction) {
-		if (direction == "down") {
-			$("header").addClass(
-				"fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10"
-			);
-			$(".nav-menu").removeClass("text-white");
-			$(".nav-menu").addClass("text-black");
-			$("#menu").addClass("text-black");
-			$(".hamburger-top").addClass("bg-black");
-			$(".hamburger-middle").addClass("bg-black");
-			$(".hamburger-bottom").addClass("bg-black");
-		} else {
-			$("header").removeClass(
-				"fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10"
-			);
-			$(".nav-menu").removeClass("text-black");
-			$(".nav-menu").addClass("text-white");
-			$(".hamburger-top").removeClass("bg-black");
-			$(".hamburger-middle").removeClass("bg-black");
-			$(".hamburger-bottom").removeClass("bg-black");
-			$("#menu").removeClass("text-black");
+	function runBoot() {
+		if (!boot || !bootLog) {
+			startTyping();
+			return;
 		}
-	});
-	$("#contact").waypoint(function (direction) {
-		if (direction == "down") {
-			$(".nav-menu").removeClass("text-white");
-			$(".nav-menu").addClass("text-black");
-		}
-		// else {
-		// 	$(".nav-menu").removeClass("text-black");
-		// 	$(".nav-menu").addClass("text-white");
-		// }
-	});
-	// $(".portfolio-section").waypoint(function (direction) {
-	// 	if (direction == "down") {
-	// 		$(".nav-menu").removeClass("text-black");
-	// 		$(".nav-menu").addClass("text-white");
-	// 	} else {
-	// 		$(".nav-menu").removeClass("text-white");
-	// 		$(".nav-menu").addClass("text-black");
-	// 	}
-	// });
+		let i = 0;
+		const total = bootLines.length;
+		const timer = setInterval(function () {
+			if (i < total) {
+				const line = document.createElement("p");
+				line.innerHTML =
+					'<span style="color:#00ff9c">' +
+					bootLines[i].slice(0, 8) +
+					"</span>" +
+					bootLines[i].slice(8);
+				bootLog.appendChild(line);
+				if (bootBar) bootBar.style.width = Math.round(((i + 1) / total) * 100) + "%";
+				i++;
+			} else {
+				clearInterval(timer);
+				setTimeout(function () {
+					boot.style.transition = "opacity .5s ease";
+					boot.style.opacity = "0";
+					setTimeout(function () {
+						boot.style.display = "none";
+						document.body.style.overflow = "";
+					}, 500);
+					startTyping();
+				}, 350);
+			}
+		}, 220);
+	}
 
-	// $(".scroll-to-about").click(function () {
-	// 	$("body, html").animate(
-	// 		{ scrollTop: $(".about-section").offset().top },
-	// 		1000
-	// 	);
-	// });
+	// ---- Typing effect (role) ----
+	const typedEl = document.getElementById("typed");
+	const roles = [
+		"Full-Stack Web & Mobile Developer",
+		"Laravel · React · Vue Engineer",
+		"Flutter & Kotlin Mobile Dev",
+		"REST API Architect",
+	];
 
-	// Select all links with hashes
-	$('a[href*="#"]')
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function (event) {
-			// On-page links
-			if (
-				location.pathname.replace(/^\//, "") ==
-					this.pathname.replace(/^\//, "") &&
-				location.hostname == this.hostname
-			) {
-				// Figure out element to scroll to
-				var target = $(this.hash);
-				target = target.length
-					? target
-					: $("[name=" + this.hash.slice(1) + "]");
-				// Does a scroll target exist?
-				if (target.length) {
-					// Only prevent default if animation is actually gonna happen
-					event.preventDefault();
-					$("html, body").animate(
-						{
-							scrollTop: target.offset().top,
-						},
-						1000,
-						function () {
-							// Callback after animation
-							// Must change focus!
-							var $target = $(target);
-							$target.focus();
-							if ($target.is(":focus")) {
-								// Checking if the target was focused
-								return false;
-							} else {
-								$target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-								$target.focus(); // Set focus again
-							}
-						}
-					);
+	function startTyping() {
+		if (!typedEl) return;
+		let r = 0,
+			c = 0,
+			deleting = false;
+		function tick() {
+			const word = roles[r];
+			if (!deleting) {
+				typedEl.textContent = word.slice(0, ++c);
+				if (c === word.length) {
+					deleting = true;
+					return setTimeout(tick, 1600);
+				}
+			} else {
+				typedEl.textContent = word.slice(0, --c);
+				if (c === 0) {
+					deleting = false;
+					r = (r + 1) % roles.length;
 				}
 			}
+			setTimeout(tick, deleting ? 45 : 85);
+		}
+		tick();
+	}
+
+	// ---- Mobile menu ----
+	const menuBtn = document.getElementById("menu-btn");
+	const mobileMenu = document.getElementById("mobile-menu");
+	if (menuBtn && mobileMenu) {
+		menuBtn.addEventListener("click", function () {
+			mobileMenu.classList.toggle("hidden");
 		});
+		document.querySelectorAll(".mnav").forEach(function (link) {
+			link.addEventListener("click", function () {
+				mobileMenu.classList.add("hidden");
+			});
+		});
+	}
 
-	// // Animation scroll
-	$(".about-section").waypoint(
-		function (direction) {
-			$(".about-section").addClass("animate__animated animate__fadeIn");
-		},
-		{
-			offset: "50%",
+	// ---- Scroll reveal ----
+	function initReveal() {
+		const els = document.querySelectorAll(".reveal");
+		if (!("IntersectionObserver" in window)) {
+			els.forEach(function (el) {
+				el.classList.add("visible");
+			});
+			return;
 		}
-	);
+		const io = new IntersectionObserver(
+			function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("visible");
+						io.unobserve(entry.target);
+					}
+				});
+			},
+			{ threshold: 0.12 }
+		);
+		els.forEach(function (el) {
+			io.observe(el);
+		});
+	}
 
-	$(".portfolio-section").waypoint(
-		function (direction) {
-			$(".project-box").addClass("animate__animated animate__zoomIn");
-		},
-		{
-			offset: "50%",
-		}
-	);
+	// ---- Year ----
+	function setYear() {
+		const y = document.getElementById("year");
+		if (y) y.textContent = new Date().getFullYear();
+	}
 
-	$(".contact-section").waypoint(
-		function (direction) {
-			$(".contact-title").addClass("animate__animated animate__pulse");
-		},
-		{
-			offset: "50%",
-		}
-	);
-});
+	// ---- Init ----
+	document.addEventListener("DOMContentLoaded", function () {
+		document.body.style.overflow = "hidden";
+		setYear();
+		initReveal();
+		runBoot();
+	});
+})();
